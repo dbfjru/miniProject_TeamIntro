@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main {
+            position: relative;
+            /* 배경 이미지 지정 */
+            background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLNeub%2FbtsCtbbMcsp%2FSYyqMTHRSViB0gSaPBc3ak%2Fimg.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 1000px;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 1; /* container 위에 배치 */
+            overflow: hidden; /* 내부 이미지를 컨테이너 크기에 맞게 보이도록 설정 */
+            width: 45%;
+            margin: 0 auto; /* 가운데 정렬을 위한 마진 설정 */
+            height: 60vh; /* 배경 이미지 세로의 70% */
+        }
+
+        /* container 내부 요소 위치 조정 */
+        .container img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* 이미지를 조정하여 크롭하지 않고 비율 유지 */
+        }
+
+        .personalImg {
+            background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVWU31%2FbtsCsySDNcW%2FejM4liWjBcQhdQkgsIoQik%2Fimg.png');
+            position: absolute;
+            top: -10%; /* container 위에 겹치도록 위치 조정 */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+            width: 10%; /* 작은 이미지 크기 조정 */
+        }
+
+        .name {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 이미지 중앙 정렬 */
+            z-index: 4;
+        }
+
+        .vlog {
+            color: white;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+        }
+
+        .card {
+            background-color: darkgray;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+            width: 40rem;
+            height: 250px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: -10px; /* 위 여백 조정 */
+        }
+
+        .card-box {
+            background-color: white;
+            width: 600px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid darkgray; /* 테두리 추가 */
+        }
+
+        .card-context {
+            font-size: 18px; /* 글씨 크기 조정 */
+            margin: 0; /* 내부 여백 제거 */
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZT3UooJ90xpUUUjGyYpleirMT2kzb0emtHQfmgBWTJYTPMWiZamOC9uZpQ&s"
+             class="rounded mx-auto d-block" alt="...">
+        <div class="personalImg" alt="...">
+        </div>
+        <h1 class="name">유선아</h1>
+        <p class="vlog">v-log : https://daramcoding.tistory.com/</p>
+    </div>
+    <div class="card">
+        <div class="card">
+            <div class="card-box">
+                <h1 class="card-context">유선아</h1>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+</div>
+</body>
+</html>
