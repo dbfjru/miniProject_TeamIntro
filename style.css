@@ -5,6 +5,13 @@
   text-decoration: none;
   font-family: "Wanted Sans Std Variable", "Wanted Sans Std";
 }
+.btn-primary {
+  background-color: orange;
+  border: none;
+}
+.btn-primary ::after {
+  background-color: antiquewhite;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -13,6 +20,13 @@ body {
 header {
   padding: 1rem !important;
   box-sizing: border-box;
+}
+.card-body {
+  text-align: center;
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
 }
 section {
   height: 100vh;
@@ -44,7 +58,6 @@ section {
   height: 100%;
 }
 .allBox2 {
-  background-color: rebeccapurple;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -54,4 +67,20 @@ section {
   border: 1px solid black;
   width: 18%;
   height: 550px;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: orange;
+  --bs-btn-border-color: orange;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: orange;
+  --bs-btn-hover-border-color: orange;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: orange;
+  --bs-btn-active-border-color: orange;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: orange;
+  --bs-btn-disabled-border-color: orange;
 }
