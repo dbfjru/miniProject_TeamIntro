@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyunseung Na</title>
+  <link rel="stylesheet" href="./CSS/NHS.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <h1>THIS IS US</h1>
+  </header>
+  <section> <!--섹션안에는 사진과 개인정보, 자기소개가 들어감-->
+    <div class="contentsBox">
+      <div class="cardBox">
+        <img id="myImage" src="./img/img2.jpeg">
+        <h2>나현승</h2>
+        <li><a target="_blank" href="https://velog.io/@dbfjru">Come to My velog</a></li>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample1">
+      <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <span class="boxTitle">나는 어떤 사람일까요?</span>
+        </button>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+          <div class="accordion-body">
+            <div class="myRow">
+              <li>MBTI : ESFP</li>
+              <li>좋아하는 색 : 초록색</li>
+              <li>좋아하는 영화 : <a target="_blank" href="https://movie.daum.net/moviedb/main?movieId=70534">A Star Is
+                  Born</a></li>
+              <li>취미 : 웨이트 트레이닝, 러닝</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample2">
+      <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          <span class="boxTitle">객관적으로 살펴본 나의 장점은?</span>
+        </button>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+          <div class="accordion-body">
+            <div class="myRow">
+              <li>살아있는 주크박스</li>
+              <li>분위기 파악에 능함</li>
+              <li>이해하기 쉽게 설명함</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample3">
+      <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <span class="boxTitle">나의 협업 스타일은?</span>
+        </button>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+          <div class="accordion-body">
+            <div class="myRow">
+              <li>적극적이고 최선을 다함</li>
+              <li>의사소통을 중요시함</li>
+              <li>피드백을 적극 수용함</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
