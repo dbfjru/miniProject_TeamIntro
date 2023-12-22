@@ -9,7 +9,7 @@ body {
 .mytitle {
     width: auto;
     height: 75px;
-    text-align: center top;
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     margin: 20px auto 0px auto;
 }
 
-.card-img-top {
+.cardimgtop {
     border-radius: 40px;
     width: 200px;
     height: 300px;
