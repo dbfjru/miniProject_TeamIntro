@@ -1,7 +1,6 @@
 .main {
     position: relative;
-    /* 배경 이미지 지정 */
-    background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLNeub%2FbtsCtbbMcsp%2FSYyqMTHRSViB0gSaPBc3ak%2Fimg.jpg');
+    background-image: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
     height: 1000px;
@@ -11,29 +10,28 @@
     text-align: center;
     position: relative;
     z-index: 1; /* container 위에 배치 */
-    overflow: hidden; /* 내부 이미지를 컨테이너 크기에 맞게 보이도록 설정 */
+    overflow: hidden;
     width: 45%;
-    margin: 0 auto; /* 가운데 정렬을 위한 마진 설정 */
-    height: 60vh; /* 배경 이미지 세로의 70% */
+    margin: 0 auto;
+    height: 60vh;
 }
 
-/* container 내부 요소 위치 조정 */
 .container img {
     position: relative;
     z-index: 2;
     width: 100%;
     height: auto;
-    object-fit: cover; /* 이미지를 조정하여 크롭하지 않고 비율 유지 */
+    object-fit: cover;
 }
 
 .personalImg {
-    background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVWU31%2FbtsCsySDNcW%2FejM4liWjBcQhdQkgsIoQik%2Fimg.png');
+    background-image: url(../img/img4.jpeg);
     position: absolute;
     top: -10%; /* container 위에 겹치도록 위치 조정 */
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
-    width: 10%; /* 작은 이미지 크기 조정 */
+    width: 10%;
 }
 
 .name {
@@ -41,7 +39,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* 이미지 중앙 정렬 */
+    transform: translate(-50%, -50%);
     z-index: 4;
 }
 
