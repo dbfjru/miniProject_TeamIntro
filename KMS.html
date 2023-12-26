@@ -16,107 +16,105 @@
 
 
 <body>
-    <header class="mytitle">
-        <h1>This is Us</h1>
-    </header>
-        <div id="card" class="row row-cols-1 row-cols-md-3 g-1">
-                <div  class="card">
-                    <img src="img\img1.jpeg" class="cardimgtop" alt="...">
+    <header>
+        <div class="mybtn">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                자기소개 추가 입력하기
+            </button>
 
-                    <div class="card-body">
-                        <h5 class="card-title">김민상</h5>
-                        <p class="underline"></p>
-                        <p class="card-text" style="text-align: center;">blog</p>
-                        <a href="https://kiwimel0n-study.tistory.com/" target="_blank">https://kiwimel0n-study.tistory.com/</a>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <p>MBTI : INTJ</p>
-                            <p>좋아하는 색 : 청녹색</p>
-                            <p>좋아하는 운동 : 걷기, 농구</p>
-                            <p>좋아하는 책 : 종이여자</p>
-                            <p>좋아하는 차 : 자몽허니블랙티</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>객관적으로 살펴본 자신의 장점</p>
-                            <a>자신을 객관적으로 바라볼 수 있습니다.</a>
-                        </li>
-                        <li class="list-group-item">
-                            <p>자신의 스타일 협업 스타일 소개</p>
-                            <a>수용할 수 있는대로 최대한 맞춰보는 스타일 입니다.</a>
-                        </li>
-                    </ul>
-                    <div class="card-body">
-
-                    </div>
-                </div>
-        </div>
-    <div class="mybtn">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            자기소개 추가 입력하기
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">자기소개 입력</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="image" class="form-label">프로필사진</label>
-                                <input type="text" class="form-control" id="image" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">이름</label>
-                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="blogadd" class="form-label">블로그 주소</label>
-                                <input type="text" class="form-control" id="blogadd">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mbti" class="form-label">MBTI</label>
-                                <input type="text" class="form-control" id="mbti">
-                            </div>
-                            <div class="mb-3">
-                                <label for="favcolor" class="form-label">좋아하는 색</label>
-                                <input type="text" class="form-control" id="favcolor">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exercise" class="form-label">좋아하는 운동</label>
-                                <input type="text" class="form-control" id="exercise">
-                            </div>
-                            <div class="mb-3">
-                                <label for="book" class="form-label">좋아하는 책</label>
-                                <input type="text" class="form-control" id="book">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tea" class="form-label">좋아하는 차</label>
-                                <input type="text" class="form-control" id="tea">
-                            </div>
-                            <div class="mb-3">
-                                <label for="postivepoint" class="form-label">객관적으로 살펴본 자신의 장점</label>
-                                <input type="text" class="form-control" id="postivepoint">
-                            </div>
-                            <div class="mb-3">
-                                <label for="collastyle" class="form-label">자신의 스타일 협업 스타일 소개</label>
-                                <input type="text" class="form-control" id="collastyle">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">뒤로가기</button>
-                        <button id="postingbtn" type="button" class="btn btn-primary">적용하기</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">자기소개 입력</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="image" class="form-label">프로필사진</label>
+                                    <input type="text" class="form-control" id="image" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">이름</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="blogadd" class="form-label">블로그 주소</label>
+                                    <input type="text" class="form-control" id="blogadd">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mbti" class="form-label">MBTI</label>
+                                    <input type="text" class="form-control" id="mbti">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="favcolor" class="form-label">좋아하는 색</label>
+                                    <input type="text" class="form-control" id="favcolor">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exercise" class="form-label">좋아하는 운동</label>
+                                    <input type="text" class="form-control" id="exercise">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="book" class="form-label">좋아하는 책</label>
+                                    <input type="text" class="form-control" id="book">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tea" class="form-label">좋아하는 차</label>
+                                    <input type="text" class="form-control" id="tea">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="postivepoint" class="form-label">객관적으로 살펴본 자신의 장점</label>
+                                    <input type="text" class="form-control" id="postivepoint">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="collastyle" class="form-label">자신의 스타일 협업 스타일 소개</label>
+                                    <input type="text" class="form-control" id="collastyle">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">뒤로가기</button>
+                            <button id="postingbtn" type="button" class="btn btn-primary">적용하기</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
+        <h1 class="mytitle">THIS IS US</h1>
+    </header>
+    <div id="card" class="row row-cols-1 row-cols-md-3 g-1">
+        <div class="card">
+            <img src="img\img1.jpeg" class="cardimgtop" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">김민상</h5>
+                <p class="underline"></p>
+                <p class="card-text" style="text-align: center;">Blog</p>
+                <a href="https://kiwimel0n-study.tistory.com/" target="_blank">Tstory</a>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <p>MBTI : INTJ</p>
+                    <p>좋아하는 색 : 청녹색</p>
+                    <p>좋아하는 운동 : 걷기, 농구</p>
+                    <p>좋아하는 책 : 종이여자</p>
+                    <p>좋아하는 차 : 자몽허니블랙티</p>
+                </li>
+                <li class="list-group-item">
+                    <p>객관적으로 살펴본 자신의 장점</p>
+                    <a>자신을 객관적으로 바라볼 수 있습니다.</a>
+                </li>
+                <li class="list-group-item">
+                    <p>자신의 스타일 협업 스타일 소개</p>
+                    <a>수용할 수 있는대로 최대한 맞춰보는 스타일 입니다.</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 <script type="module">
@@ -189,8 +187,7 @@
         let collastyle = row['collastyle'] || '';
 
 
-        let temp_html = `
-        <div class="row-cols-1 row-cols-md-5 g-4">        
+        let temp_html = `        
             <div class="card">
                 <img src="${image}" class="cardimgtop" alt="...">
 
@@ -198,7 +195,7 @@
                     <h5 class="card-title">${name}</h5>
                     <p class="underline"></p>
                     <p class="card-text" style="text-align: center;">blog</p>
-                    <p class="card-text" style="text-align: center;">${blogadd}</p>
+                    <a href="${blogadd}" target="_blank">${blogadd}</a>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
@@ -217,18 +214,9 @@
                     <a>${collastyle}</a>
                 </li>
                 </ul>
-                    <div class="card-body">
-
-                    </div>
-                </div>
-            </div>
-        </div>`;
+            </div>`;
         $('#card').append(temp_html);
     });
-
-    function openclose() {
-        $('#postingbox').toggle();
-    }
 </script>
 
 </html>
